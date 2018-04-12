@@ -354,9 +354,7 @@ export default class Pdf extends Component {
                     />
                 );
             } else if (Platform.OS === "ios") {
-                return (
-                    <WebView source={{uri:this.state.path}} />
-                );
+                return (<WebView source={{uri:this.state.path}} />);
             } else {
                 return (null);
             }
